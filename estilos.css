@@ -1,0 +1,157 @@
+
+.container{
+
+  margin: 3%;
+  box-sizing: border-box;
+}
+
+body {
+  background: #292929;
+  font-family: 'calibri';
+  padding: 0;
+  margin:0 ;
+
+}
+
+header {
+  background: #03A9F4;
+  width: 100%;
+  clear: both;
+  content:'';
+  display: table;
+}
+
+.menu {
+  width: 800px;
+  margin: auto;
+}
+
+
+
+nav {
+  float: left;
+}
+
+nav ul li {
+  list-style: none;
+  margin-left: 75px;
+  padding: 12px 0;
+  float: left;
+  position: relative;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+
+}
+
+nav ul li a::before {
+  display: block;
+  content: '';
+  width: 0%;
+  background: #444;
+  height: 5px;
+  top:0;
+  position: absolute;
+  transition: width 0.2s;
+}
+
+nav ul li a:hover::before {
+  width: 100%;
+}
+section{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 50px 0;
+}
+section h2{
+  width: 200%;
+  color: rgb(255, 255, 255);
+  font-family: 'calibri';
+  font-size:25PX;
+  text-align: center;
+   letter-spacing: .2em;
+}
+
+
+
+/*Estilo C*/
+.estilo-c{
+  font-family:'calibri';
+  width: 30%;
+  letter-spacing: .2em;
+}
+.estilo-c .img-container{
+  overflow: hidden;
+  height: 250px;
+  position: relative;
+  border-radius: 15px;
+}
+.estilo-c .img-container img{
+  width: 105%;
+  position: absolute;
+  top: -60%;
+  transition: all 0.5s;
+}
+.estilo-c:hover .img-container img{
+  transform: scale(1.2);
+}
+.estilo-c .img-container .promo{
+  position: absolute;
+  top: 10px;
+  left: 0;
+  font-size: 20px;
+  background: rgb(28, 93, 233);
+  padding: 15px;
+  color: black;
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+  letter-spacing: .2em;
+  color: white;
+}
+.estilo-c .info-container{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  font-family: 'calibri';
+  color: white;
+  font-size:16px;
+}
+.estilo-c .info-container h3{
+  margin: 0;
+}
+.estilo-c .info-container h3,
+.estilo-c .info-container strong,
+.estilo-c .info-container span{
+  padding: 5px 15px;
+  width: 100%;
+}
+.estilo-c .add-cart{
+  margin-top: 2px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  background-color: white;
+  padding: 15px;
+  border: 1px rgb(167, 167, 167);
+  border-radius: 25px;
+  
+  
+}
+
+
+.estilo-c .add-cart:hover{
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  border: 1px solid rgb(255, 255, 255);
+   font-family: 'calibri';
+}
+
+
+
+
+
